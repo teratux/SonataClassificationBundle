@@ -14,11 +14,11 @@ declare(strict_types=1);
 namespace Sonata\ClassificationBundle\Command;
 
 use Sonata\ClassificationBundle\Model\ContextInterface;
-use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
+use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class FixContextCommand extends ContainerAwareCommand
+class FixContextCommand extends Command
 {
     public function configure()
     {
